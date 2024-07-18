@@ -246,7 +246,7 @@ const DaySprint = () => {
     const [prototypeData, setPrototypeData] = useState({ coreElements: '', structureFlow: '', interactionsProcesses: '' });
     const [testingScenario, setTestingScenario] = useState('');
     const [userInteraction, setUserInteraction] = useState('');
-    const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [isSprintComplete, setIsSprintComplete] = useState(false);
 
     const conversationEndRef = useRef(null);
