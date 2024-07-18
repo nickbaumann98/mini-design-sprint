@@ -223,13 +223,20 @@ const InteractionSection = styled.div`
 const ToggleSidebarButton = styled.button`
   position: fixed;
   top: 10px;
-  right: ${props => props.isSidebarOpen ? '310px' : '10px'};
-  background-color: transparent;
-  color: #3c8ce7;
+  right: 10px;
+  background-color: #3c8ce7;
+  color: white;
   border: none;
+  padding: 10px;
   font-size: 1.5rem;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 1001;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const SubmitButton = styled(SendButton)`
@@ -442,9 +449,9 @@ const DaySprint = () => {
             }
         } catch (error) {
             console.error('Error in handleSubmit:', error);
-            setMessages(prev => [...prev, {
-                isUser: false,
-                text: `I'm having trouble connecting to my knowledge base. Please try again. Error: ${error.message}`
+            setMessages(prev => [...prev, { 
+                isUser: false, 
+                text: `I'm having trouble connecting to my knowledge base. Please try again. Error: ${error.message}` 
             }]);
         } finally {
             setIsTyping(false);

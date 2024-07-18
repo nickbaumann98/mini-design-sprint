@@ -12,12 +12,15 @@ const Sidebar = styled.div`
   font-family: 'Futura', 'Avenir', 'Proxima Nova', 'Helvetica', sans-serif;
   border-left: 1px solid #2a2a2a;
   height: 100vh;
+  position: fixed;
+  top: 0;
+  right: ${props => props.isOpen ? '0' : '-300px'};
+  transition: right 0.3s ease-in-out;
+  z-index: 1000;
+
   @media (max-width: 768px) {
-    position: fixed;
-    right: ${props => props.isOpen ? '0' : '-300px'};
-    top: 0;
-    bottom: 0;
-    transition: right 0.3s ease;
+    width: 100%;
+    right: ${props => props.isOpen ? '0' : '-100%'};
   }
 `;
 
@@ -51,7 +54,7 @@ const ObjectiveContent = styled.div`
   margin-left: 0.5rem;
 `;
 
-const OutputSidebar = ({ sprintData, currentDay }) => {
+const OutputSidebar = ({ sprintData, currentDay, isOpen }) => {
     const renderObjectiveContent = (day, objective, content) => {
         if (Array.isArray(content)) {
             return (
@@ -79,7 +82,7 @@ const OutputSidebar = ({ sprintData, currentDay }) => {
     console.log("Rendering Sidebar with Data:", sprintData);
 
     return (
-        <Sidebar>
+        <Sidebar isOpen={isOpen}>
             <Title>Sprint Progress</Title>
             {Object.entries(sprintGuidance).map(([day, { goal, objectives }]) => {
                 const dayNum = parseInt(day);
