@@ -1,0 +1,34 @@
+# Friday Guide for the mini design sprint Sprint Methodology
+
+## Purpose
+Friday is the culmination of the mini design sprint sprint, focused on testing the prototype and gathering valuable insights. The goal is to validate the solutions developed during the sprint by understanding real user interactions and feedback. This will help determine if the prototype meets the long-term goal set on Monday and identify any necessary improvements.
+
+## Key Tasks
+1. **User Testing**: Conduct usability tests to observe user interactions with the prototype.
+2. **Feedback Collection**: Gather feedback to understand user experiences and identify pain points.
+3. **Data Analysis**: Analyze feedback to find patterns, strengths, and weaknesses in the prototype.
+4. **Refinement Planning**: Plan the next steps for refining and improving the prototype based on the feedback.
+
+## User Testing
+- **Recruit Users**: If possible, find a few users who represent your target audience. If not, use friends or colleagues who can provide objective feedback.
+- **Set Up Testing Environment**: Ensure users can access the prototype easily. Use screen-sharing tools if needed.
+- **Prepare a Testing Script**: Guide users through specific tasks in the prototype to observe their interactions and gather consistent feedback.
+
+## Feedback Collection
+- **Observation**: Watch users as they interact with the prototype. Note any areas of confusion or difficulty.
+- **Surveys and Interviews**: After the test, ask users to complete a short survey or conduct a brief interview to gather more detailed feedback.
+
+## Data Analysis
+- **Identify Patterns**: Look for common themes in the feedback. What are users struggling with? What do they like?
+- **Strengths and Weaknesses**: List the strengths and weaknesses of the prototype based on user feedback.
+
+## Refinement Planning
+- **Prioritize Changes**: Based on the feedback, decide which changes are most critical to address.
+- **Plan Next Steps**: Outline the steps needed to refine the prototype. Consider what can be done immediately and what might need more time.
+
+## Guidance and Tips
+- **Be Open-Minded**: User feedback can be tough, but it’s essential for improving your prototype.
+- **Stay Focused**: Keep the long-term goal in mind when analyzing feedback and planning refinements.
+- **Iterate Quickly**: Implement feedback rapidly to keep momentum and continue improving your solution.
+
+Friday is all about validating your work and learning from real user interactions. By the end of the day, you should have a clear understanding of what works, what doesn’t, and how to make your prototype even better.

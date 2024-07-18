@@ -1,0 +1,35 @@
+Purpose:
+Wednesday is a critical day in the "mini design sprint" sprint methodology, aimed at making key decisions about which ideas to prototype and test. The focus is on evaluating the solutions generated on Tuesday, selecting the most promising ones, and creating a detailed plan for the prototype. This day ensures that the user can effectively narrow down their options and prepare for the prototyping phase.
+
+Key Tasks:
+
+Review Solutions:
+Evaluate the ideas and solutions generated on Tuesday.
+Discuss the strengths and weaknesses of each solution.
+Decision-Making:
+Select the best solutions to move forward with.
+Use a structured process to make decisions efficiently and without bias.
+Storyboard Creation:
+Develop a detailed storyboard for the prototype.
+Outline how the prototype will work and what it will demonstrate.
+Guidance and Tips:
+
+Structured Evaluation:
+Review each solution systematically, considering its feasibility, potential impact, and alignment with the long-term goal.
+Avoid spending too much time on any single idea; aim for a balanced evaluation of all solutions.
+Decision-Making Process:
+Use methods like dot voting or a decision matrix to objectively evaluate the solutions.
+Ensure that each idea is given fair consideration, but focus on selecting the ones with the highest potential.
+Make decisions quickly and confidently, relying on the criteria established earlier in the sprint.
+Creating an Effective Storyboard:
+Develop a clear and concise storyboard that outlines the key steps and features of the prototype.
+Ensure that the storyboard is detailed enough to guide the prototyping process but flexible enough to allow for adjustments.
+Use sketches, diagrams, and notes to visualize the prototype and how it will address the key challenges and opportunities identified earlier in the sprint.
+Example of a Structured Decision-Making Process:
+
+List all the ideas generated on Tuesday.
+Assign a set amount of time for evaluating each idea (e.g., 5-10 minutes per idea).
+Use a decision matrix to score each idea based on criteria such as feasibility, impact, and alignment with the long-term goal.
+Select the top 2-3 ideas based on their scores and discuss any final considerations before making a decision.
+Create a detailed storyboard for the chosen solution(s) to guide the prototyping process.
+By the end of Wednesday, the user should have a clear understanding of which solutions to prototype and a detailed plan for how to build and test the prototype on the following day.

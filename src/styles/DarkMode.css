@@ -1,0 +1,50 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .container {
+    background-color: #1a1a1a;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+  
+  p {
+    color: #e0e0e0;
+  }
+  
+  button {
+    background-color: #3c8ce7;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #2a6cb0;
+  }
+  
+  input, textarea {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #3c3c3c;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .chat-icon {
+    background-color: #3c8ce7;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  /* Add more specific styling as needed */

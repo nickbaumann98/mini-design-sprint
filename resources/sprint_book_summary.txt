@@ -1,0 +1,136 @@
+The design sprint is a 5-day process for answering critical business questions through design, prototyping, and testing ideas with customers. Developed at Google Ventures, it's a "greatest hits" of business strategy, innovation, behavior science, design thinking, and more—packaged into a battle-tested process that any team can use.
+The sprint gives teams a shortcut to learning without building and launching. The sprint is a framework for solving big problems and testing new ideas in just 5 days:
+
+Monday: Map out the problem and pick an important place to focus.
+Tuesday: Sketch competing solutions on paper.
+Wednesday: Make difficult decisions and turn ideas into a testable hypothesis.
+Thursday: Hammer out a realistic prototype.
+Friday: Test it with real live humans.
+
+Key Principles:
+
+Work together in short, focused sprints
+Timebox activities to force prioritization and efficiency
+Involve key decision makers to ensure alignment and fast decisions
+Minimize group brainstorming in favor of individual work
+Create a realistic prototype to test with customers
+Get clear data from customer reactions to inform decisions
+
+The 5-Day Process:
+Monday: Map & Target
+
+Start at the end: Define long-term goal and sprint questions
+Make a map: Create a simple diagram of the challenge
+Ask the experts: Interview teammates and experts
+Target: Pick a specific target customer and target event to focus on
+
+Tuesday: Sketch
+
+Remix and improve: Look at existing ideas to remix and improve
+Sketch: Develop solutions on paper following a four-step process
+
+
+Notes  2) Ideas  3) Crazy 8s  4) Solution sketch
+
+Wednesday: Decide
+
+Sticky decision: Choose the best solutions to prototype
+
+
+Art museum: Put solutions on wall
+Heat map: Silently review and vote on best parts
+Speed critique: Discuss highlights
+Straw poll: Vote on solution to test
+Supervote: Decider makes final decision
+
+
+Storyboard: Outline the prototype
+
+Thursday: Prototype
+
+Fake it: Create a realistic façade of your product or service
+Divide and conquer: Break into tasks and assign roles
+Stitch it together: Combine all the components into a seamless experience
+Do a trial run: Review and polish the prototype
+
+Friday: Test
+
+Interview 5 target customers
+Watch interviews together as a team
+Look for patterns to identify winning ideas
+
+Key Elements:
+The Decider: Include a key decision maker with authority to make decisions. This prevents the team from getting stuck.
+The Facilitator: Have someone manage time, conversations, and the process. This keeps things on track.
+No Devices: Ban devices during sprint activities to ensure focus.
+Ask the Experts: Interview knowledgeable team members and outside experts to gather key information.
+How Might We Notes: Frame challenges as opportunities by asking "How might we...?"
+The Four-Step Sketch: A structured process for developing solutions:
+
+Notes: Review key information
+Ideas: Brainstorm rough ideas
+Crazy 8s: Rapidly sketch eight variations
+Solution Sketch: Create a detailed three-panel storyboard
+
+The Sticky Decision: A five-step process to choose solutions efficiently:
+
+Art museum: Post solutions on the wall
+Heat map: Silently review and vote on promising parts
+Speed critique: Quickly discuss the highlights
+Straw poll: Vote on a solution
+Supervote: Decider makes final pick
+
+Prototyping: Create a realistic façade that appears real to customers. Focus on the customer-facing experience.
+The Five-Act Interview: A structured way to test the prototype with customers:
+
+Friendly welcome
+Context questions
+Introduce the prototype
+Tasks and nudges
+Quick debrief
+
+Benefits of the Sprint Process:
+Speed: Compress months of work into a single week.
+Focus: Clear the schedule and eliminate distractions.
+Alignment: Get everyone on the same page quickly.
+De-risking: Test big ideas before making expensive commitments.
+Customer-centricity: Make critical decisions based on direct customer feedback.
+Momentum: Energize teams by creating quick wins and clear next steps.
+Tips for Success:
+
+Choose an important challenge that's worth a week of focused time.
+Get the right people in the room - include diverse expertise and key decision makers.
+Trust the process - follow the steps even if they feel unnatural at first.
+Embrace constraints - the structure and time limits force clarity and efficiency.
+Stay customer-focused - frame everything in terms of customer needs and test with real users.
+Build a realistic prototype - make it appear real, even if it doesn't fully function.
+Look for patterns in customer feedback - focus on clear signals, not outliers.
+Be ready to iterate - treat the sprint as a learning process, not a solution factory.
+
+Common Challenges and Solutions:
+Challenge: The team wants to brainstorm together.
+Solution: Explain that individual work produces better results and is more efficient.
+Challenge: People are distracted by devices and outside work.
+Solution: Set clear expectations about focus and schedule break times for catching up.
+Challenge: The group struggles to make decisions quickly.
+Solution: Rely on the Decider to break ties and keep things moving.
+Challenge: The prototype feels too rough or unfinished.
+Solution: Remember you only need a realistic façade to get useful feedback.
+Challenge: Customer interviews feel awkward or unnatural.
+Solution: Use the structured Five-Act Interview format and practice beforehand.
+Challenge: The results aren't definitive or feel inconclusive.
+Solution: Look for patterns across multiple interviews and be ready to run follow-up sprints.
+When to Use a Design Sprint:
+
+Starting a new project or initiative
+Tackling a complex challenge with many unknowns
+Making a high-stakes decision
+Breaking through when feeling stuck
+Aligning teams around a shared vision
+Accelerating the design and development process
+De-risking big ideas before major investment
+Getting rapid customer feedback on new concepts
+
+The design sprint isn't a silver bullet, but it is an efficient way to solve big problems and test new ideas. By compressing work that often takes months into a single week, it lets teams make rapid progress on critical challenges. The highly structured process keeps teams focused and aligned, while putting ideas in front of real customers provides invaluable learning.
+Ultimately, the sprint is about moving fast, working together effectively, and putting customers at the center of solution development. It's a powerful tool for innovation that can be adapted to work in a wide range of contexts. While it requires an investment of time and energy, teams that commit to the sprint process are often surprised by how much they can accomplish in a single focused week.
+The sprint gives teams a superpower: the ability to fast-forward into the future to see their finished product and customer reactions, before making any expensive commitments. It's a way to solve big problems, launch new products, or improve existing ones—all while learning directly from customers in a matter of days rather than months. By adopting the sprint methodology, teams can move faster, work smarter, and put their effort towards the things that really matter to their customers and their business.
