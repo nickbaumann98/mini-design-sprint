@@ -12,6 +12,13 @@ const Sidebar = styled.div`
   font-family: 'Futura', 'Avenir', 'Proxima Nova', 'Helvetica', sans-serif;
   border-left: 1px solid #2a2a2a;
   height: 100vh;
+  @media (max-width: 768px) {
+    position: fixed;
+    right: ${props => props.isOpen ? '0' : '-300px'};
+    top: 0;
+    bottom: 0;
+    transition: right 0.3s ease;
+  }
 `;
 
 const Title = styled.h2`

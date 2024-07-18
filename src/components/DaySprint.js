@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components';  // Add keyframes here
 import { getGPTResponse } from '../utils/gptService';
 import { sprintGuidance } from '../utils/sprintResources';
 import OutputSidebar from './OutputSidebar';
+import Sidebar from './OutputSidebar';
 import FinalSummary from './FinalSummary';
 import { FaPaperPlane } from 'react-icons/fa';
 
@@ -57,8 +58,11 @@ const Input = styled.textarea`
   border-radius: 5px;
   background-color: #3a3a3a;
   color: #e0e0e0;
-  resize: none; /* Prevent resize by user */
-  overflow: hidden; /* Hide scroll bar */
+  resize: none;
+  overflow: hidden;
+  min-height: 40px;
+  max-height: 120px;
+  transition: height 0.2s ease;
 `;
 
 const SendButton = styled.button`
@@ -250,6 +254,7 @@ const DaySprint = () => {
     const [userInteraction, setUserInteraction] = useState('');
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
     const [isSprintComplete, setIsSprintComplete] = useState(false);
+    const inputRef = useRef(null);
 
     const conversationEndRef = useRef(null);
 
@@ -289,6 +294,19 @@ const DaySprint = () => {
         return text.replace(/Relay:/g, '<RelayName>Relay:</RelayName>')
             .replace(/(\d+\.)/g, '<IndentedList>$1</IndentedList>');
     };
+
+    const summarizeInput = useCallback(async (input) => {
+        if (!input || !input.trim()) return "Not yet defined";
+
+        const prompt = `Summarize the following in one concise sentence, maintaining key points: "${input}"`;
+        try {
+            const summary = await getGPTResponse(prompt, currentDay, sprintGuidance[currentDay].objectives || []);
+            return summary.trim() || input.trim();
+        } catch (error) {
+            console.error('Error summarizing input:', error);
+            return input.trim();
+        }
+    }, [currentDay, getGPTResponse]);
 
 
     const checkDayCompletion = useCallback(async () => {
@@ -339,7 +357,7 @@ const DaySprint = () => {
 
         setIsReadyForNextDay(isComplete);
         return isComplete;
-    }, [currentDay, prototypeData, sprintData, testingScenario, userInteraction]);
+    }, [currentDay, prototypeData, sprintData, testingScenario, userInteraction, summarizeInput]);
 
     useEffect(() => {
         let interval;
@@ -402,6 +420,11 @@ const DaySprint = () => {
         const userMessage = { isUser: true, text: input };
         setMessages(prev => [...prev, userMessage]);
         setInput('');
+        // Reset input height
+        if (inputRef.current) {
+            inputRef.current.style.height = '40px'; // Set to initial height
+        }
+
         setIsTyping(true);
 
         try {
@@ -428,19 +451,6 @@ const DaySprint = () => {
     const handleKeyDown = (e) => {
         if (e.key === 'Enter' && !e.shiftKey) {
             handleSubmit(e);
-        }
-    };
-
-    const summarizeInput = async (input) => {
-        if (!input || !input.trim()) return "Not yet defined";
-
-        const prompt = `Summarize the following in one concise sentence, maintaining key points: "${input}"`;
-        try {
-            const summary = await getGPTResponse(prompt, currentDay, sprintGuidance[currentDay].objectives || []);
-            return summary.trim() || input.trim();
-        } catch (error) {
-            console.error('Error summarizing input:', error);
-            return input.trim();
         }
     };
 
@@ -740,15 +750,19 @@ const DaySprint = () => {
                         </ConversationBox>
                         <InputBox>
                             <Input
+                                ref={inputRef}
                                 value={input}
-                                onChange={(e) => setInput(e.target.value)}
-                                onKeyDown={handleKeyDown}
-                                placeholder="Type your message here..."
-                                rows={1}
-                                onInput={(e) => {
-                                    e.target.style.height = 'auto';
-                                    e.target.style.height = `${e.target.scrollHeight}px`;
+                                onChange={(e) => {
+                                    setInput(e.target.value);
+                                    e.target.style.height = '40px';
+                                    e.target.style.height = `${Math.min(e.target.scrollHeight, 120)}px`;
                                 }}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter' && !e.shiftKey) {
+                                        handleSubmit(e);
+                                    }
+                                }}
+                                placeholder="Type your message here..."
                             />
                             <SendButton onClick={handleSubmit}>
                                 <FaPaperPlane />
@@ -867,9 +881,11 @@ const DaySprint = () => {
                 )}
             </MainContent>
             {isSidebarOpen && (
-                <Sidebar isOpen={isSidebarOpen}>
-                    <OutputSidebar sprintData={sprintData} currentDay={currentDay} />
-                </Sidebar>
+                <OutputSidebar
+                    sprintData={sprintData}
+                    currentDay={currentDay}
+                    isOpen={isSidebarOpen}
+                />
             )}
             <ToggleSidebarButton onClick={() => setIsSidebarOpen(!isSidebarOpen)} isSidebarOpen={isSidebarOpen}>
                 {isSidebarOpen ? '×' : '☰'}
