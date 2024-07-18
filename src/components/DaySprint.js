@@ -442,7 +442,10 @@ const DaySprint = () => {
             }
         } catch (error) {
             console.error('Error in handleSubmit:', error);
-            setMessages(prev => [...prev, { isUser: false, text: "I'm having trouble right now. Please try again." }]);
+            setMessages(prev => [...prev, {
+                isUser: false,
+                text: `I'm having trouble connecting to my knowledge base. Please try again. Error: ${error.message}`
+            }]);
         } finally {
             setIsTyping(false);
         }

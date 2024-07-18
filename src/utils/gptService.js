@@ -13,7 +13,7 @@ export const getGPTResponse = async (prompt, day, objectives) => {
                 'Authorization': `Bearer ${process.env.REACT_APP_GPT_API_KEY}`
             },
             body: JSON.stringify({
-                model: "gpt-4",
+                model: "gpt-3.5-turbo",  // or "gpt-4" if you have access
                 messages: [
                     {
                         role: "system",
