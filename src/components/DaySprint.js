@@ -26,6 +26,8 @@ const MainContent = styled.div`
   overflow-y: auto;
   display: flex;
   flex-direction: column;
+  width: ${props => props.isSidebarOpen ? 'calc(100% - 300px)' : '100%'};
+  transition: width 0.3s ease;
 `;
 
 const Header = styled.h1`
@@ -865,10 +867,9 @@ const DaySprint = () => {
                 )}
             </MainContent>
             {isSidebarOpen && (
-                <OutputSidebar
-                    sprintData={sprintData}
-                    currentDay={currentDay}
-                />
+                <Sidebar isOpen={isSidebarOpen}>
+                    <OutputSidebar sprintData={sprintData} currentDay={currentDay} />
+                </Sidebar>
             )}
             <ToggleSidebarButton onClick={() => setIsSidebarOpen(!isSidebarOpen)} isSidebarOpen={isSidebarOpen}>
                 {isSidebarOpen ? '×' : '☰'}
